@@ -1,4 +1,5 @@
 const {test, expect} = require("@playwright/test");
+const { log } = require("console");
 
 test("Client Login", async ({ page }) => {
   const userEmail = page.locator("input#userEmail");
@@ -14,5 +15,8 @@ test("Client Login", async ({ page }) => {
   await page.locator("//div[@class='card-body']//child::b").first().waitFor();
   console.log(await cardTitles.allTextContents());
 
+
+  console.log("test pr ");
   
+
 });
