@@ -16,7 +16,7 @@ test("Client Login", async ({ page }) => {
   console.log(await cardTitles.allTextContents());
 
 
-  console.log("test pr ");
+  
   
 
 });
